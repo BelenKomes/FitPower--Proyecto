@@ -1,12 +1,21 @@
+html {
+    background-color: #344CB7;
+}
+
 #body {
     color: #FFF;
     font-family: 'Poppins';
 }
 
+#body .oculto {
+    display: none;
+}
+
 #body h1,
 #body h2,
 #body h3,
-#frase-presentación {
+#frase-presentación,
+#cabecera li {
     font-family: 'Goldman';
 }
 
@@ -16,16 +25,17 @@
     background-color: #344CB7;
 }
 
-#hero-section {
-    padding: 20px;
-    height: 400px;
-    background: url("../assets/imágenes/hero section.png") center / cover;
+#cabecera a {
+    color: #FFF;
 }
 
 #body main {
     background-color: #111827;
 }
 
-#body .oculto {
-    display: none;
+#hero-section {
+    padding: 20px;
+    height: 400px;
+    background: url("../assets/imágenes/hero section.png") center / cover;
 }
+

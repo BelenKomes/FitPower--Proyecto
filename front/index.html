@@ -12,26 +12,28 @@
 </head>
 
 <body id="body">
-    <header id="cabecera" class="navbar">
-        <div id="contenedor-nombre-fitpower">
-            <h1>FitPower</h1>
+    <header id="cabecera" class="navbar navbar-expand-lg p-4">
+        <div id="contenedor-nav" class="container-fluid">
+            <div id="contenedor-nombre-fitpower" class="flex-grow-1">
+                <h1 class="flex-grow-1 text-center text-lg-start">FitPower</h1>
+            </div>
+            <nav class="collapse navbar-collapse flex-grow-0">
+                <ul class="navbar-nav">
+                    <li id="link-inicio" class="nav-item">
+                        <a class="navbar-brand nav-link" href="#">Inicio</a>
+                    </li>
+                    <li id="link-planes" class="nav-item">
+                        <a class="navbar-brand nav-link" href="#planes">Planes</a>
+                    </li>
+                    <li id="link-preguntas-frecuentes" class="nav-item">
+                        <a class="navbar-brand nav-link" href="#preguntas-frecuentes">Preguntas frecuentes</a>
+                    </li>
+                    <li id="link-contacto" class="nav-item">
+                        <a class="navbar-brand nav-link" href="#contacto">Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li id="link-inicio">
-                    <a href="#">Inicio</a>
-                </li>
-                <li id="link-planes">
-                    <a href="#planes">Planes</a>
-                </li>
-                <li id="link-preguntas-frecuentes">
-                    <a href="#preguntas-frecuentes">Preguntas frecuentes</a>
-                </li>
-                <li id="link-contacto">
-                    <a href="#contacto">Contactanos</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -55,19 +57,19 @@
                 <p>¡Elegí lo que más se adapte a vos!</p>
             </div>
             <div id="contenedor-planes">
-                <div id="plan-musculación">
+                <div id="plan-musculación" class="plan">
                     <h3 class="nombre-plan">Musculación y Calistenia</h3>
                     <a href="#planes">Inscribirme</a>
                 </div>
-                <div id="plan-spinning">
+                <div id="plan-spinning" class="plan">
                     <h3 class="nombre-plan">Spinning</h3>
                     <a href="#planes">Inscribirme</a>
                 </div>
-                <div id="plan-yoga">
+                <div id="plan-yoga" class="plan">
                     <h3 class="nombre-plan">Yoga</h3>
                     <a href="#planes">Inscribirme</a>
                 </div>
-                <div id="plan-pilates">
+                <div id="plan-pilates" class="plan">
                     <h3 class="nombre-plan">Pilates</h3>
                     <a href="#planes">Inscribirme</a>
                 </div>
@@ -113,7 +115,7 @@
                             <button id="btn-1" class="botón-más-información" data-desc="1"></button>
                         </div>
                         <div class="descripción-pregunta">
-                            <p id="desc-1">
+                            <p id="desc-1" class="oculto">
                                 FitPower ofrece a sus socios un área para la realización de ejercicios de musculación y
                                 calistenia. También una sala donde se realiza pilates y yoga, intercambiando los planes
                                 durante los días de la semana, y una sala enfocada a spinning,
@@ -126,7 +128,7 @@
                             <button id="btn-2" class="botón-más-información" data-desc="2"></button>
                         </div>
                         <div class="descripción-pregunta">
-                            <p id="desc-2">
+                            <p id="desc-2" class="oculto">
                                 Es muy sencillo, tenés que elegir el plan deseado y matricularte en nuestra página web o
                                 en recepción de la sede con tu cédula de identidad y la forma de pago elegida.
                             </p>
@@ -138,7 +140,7 @@
                             <button id="btn-3" class="botón-más-información" data-desc="3"></button>
                         </div>
                         <div class="descripción-pregunta">
-                            <p id="desc-3">
+                            <p id="desc-3" class="oculto">
                                 Después de contratar tu plan. Si realizaste tu inscripción a través de la página web,
                                 debes ir directamente a la sede con tu cédula de identidad y la tarjeta que usaste como
                                 forma de pago. En caso que la tarjeta no esté a tu nombre es necesario que el dueño de
@@ -152,7 +154,7 @@
                             <button id="btn-4" class="botón-más-información" data-desc="4"></button>
                         </div>
                         <div class="descripción-pregunta">
-                            <p id="desc-4">
+                            <p id="desc-4" class="oculto">
                                 FitPower no trabaja con atención telefónica. Todas las dudas pueden ser solucionadas a
                                 través de la página web "Hable con Nosotros" y Redes Sociales.
                             </p>
@@ -164,7 +166,7 @@
                             <button id="btn-5" class="botón-más-información" data-desc="5"></button>
                         </div>
                         <div class="descripción-pregunta">
-                            <p id="desc-5">
+                            <p id="desc-5" class="oculto">
                                 Estamos ubicados en X, Y, Z.
                             </p>
                         </div>
