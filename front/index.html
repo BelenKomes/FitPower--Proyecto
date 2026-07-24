@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - FitPower</title>
-    <link rel="stylesheet" href="dist/CSS/estsilo.css">
+    <link rel="stylesheet" href="dist/CSS/estilo.css">
+    <link rel="stylesheet" href="dist/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="dist/CSS/fuentes de letra.css">
+    <script src="dist/JS/botones.js" defer></script>
 </head>
 
-<body>
-    <header>
+<body id="body">
+    <header id="cabecera" class="navbar">
         <div id="contenedor-nombre-fitpower">
             <h1>FitPower</h1>
         </div>
@@ -106,34 +108,66 @@
             <div id="contenedor-sector-preguntas">
                 <div id="preguntas">
                     <div class="pregunta">
-                        <h3>¿Qué me ofrecen?</h3>
-                        <button class="botón-más-información">
-                            <img src="dist/assets/iconos/ícono más información.svg">
-                        </button>
+                        <div class="nombre-pregunta">
+                            <h3>¿Qué me ofrecen?</h3>
+                            <button id="btn-1" class="botón-más-información" data-desc="1"></button>
+                        </div>
+                        <div class="descripción-pregunta">
+                            <p id="desc-1">
+                                FitPower ofrece a sus socios un área para la realización de ejercicios de musculación y
+                                calistenia. También una sala donde se realiza pilates y yoga, intercambiando los planes
+                                durante los días de la semana, y una sala enfocada a spinning,
+                            </p>
+                        </div>
                     </div>
                     <div class="pregunta">
-                        <h3>¿Dónde están ubicados?</h3>
-                        <button class="botón-más-información">
-                            <img src="dist/assets/iconos/ícono más información.svg">
-                        </button>
+                        <div class="nombre-pregunta">
+                            <h3>¿Cómo hago mi inscripción?</h3>
+                            <button id="btn-2" class="botón-más-información" data-desc="2"></button>
+                        </div>
+                        <div class="descripción-pregunta">
+                            <p id="desc-2">
+                                Es muy sencillo, tenés que elegir el plan deseado y matricularte en nuestra página web o
+                                en recepción de la sede con tu cédula de identidad y la forma de pago elegida.
+                            </p>
+                        </div>
                     </div>
                     <div class="pregunta">
-                        <h3>¿Cómo hago mi inscripción?</h3>
-                        <button class="botón-más-información">
-                            <img src="dist/assets/iconos/ícono más información.svg">
-                        </button>
+                        <div class="nombre-pregunta">
+                            <h3>¿Cuándo puedo empezar a entrenar?</h3>
+                            <button id="btn-3" class="botón-más-información" data-desc="3"></button>
+                        </div>
+                        <div class="descripción-pregunta">
+                            <p id="desc-3">
+                                Después de contratar tu plan. Si realizaste tu inscripción a través de la página web,
+                                debes ir directamente a la sede con tu cédula de identidad y la tarjeta que usaste como
+                                forma de pago. En caso que la tarjeta no esté a tu nombre es necesario que el dueño de
+                                la tarjeta asista contigo a la recepción de la sede para que firme tu contrato.
+                            </p>
+                        </div>
                     </div>
                     <div class="pregunta">
-                        <h3>¿Cuándo puedo empezar a entrenar?</h3>
-                        <button class="botón-más-información">
-                            <img src="dist/assets/iconos/ícono más información.svg">
-                        </button>
+                        <div class="nombre-pregunta">
+                            <h3>¿FitPower tiene atención telefónica?</h3>
+                            <button id="btn-4" class="botón-más-información" data-desc="4"></button>
+                        </div>
+                        <div class="descripción-pregunta">
+                            <p id="desc-4">
+                                FitPower no trabaja con atención telefónica. Todas las dudas pueden ser solucionadas a
+                                través de la página web "Hable con Nosotros" y Redes Sociales.
+                            </p>
+                        </div>
                     </div>
                     <div class="pregunta">
-                        <h3>¿FitPower tiene atención telefónica?</h3>
-                        <button class="botón-más-información">
-                            <img src="dist/assets/iconos/ícono más información.svg">
-                        </button>
+                        <div class="nombre-pregunta">
+                            <h3>¿Dónde están ubicados?</h3>
+                            <button id="btn-5" class="botón-más-información" data-desc="5"></button>
+                        </div>
+                        <div class="descripción-pregunta">
+                            <p id="desc-5">
+                                Estamos ubicados en X, Y, Z.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,9 +191,7 @@
                             <input type="text" placeholder="Email">
                         </div>
                         <div class="contenedor-input">
-                            <textarea>
-                                Escribir mensaje
-                            </textarea>
+                            <textarea>Escribir mensaje</textarea>
                         </div>
                     </div>
                     <div id="contenedor-botón-formulario">
@@ -200,9 +232,7 @@
             </div>
         </div>
         <div id="copyright-fitpower">
-            <p>
-                © FitPower - Todos los derechos reservados.
-            </p>
+            <p>© FitPower - Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>

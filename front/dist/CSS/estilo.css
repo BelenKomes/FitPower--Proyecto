@@ -1,3 +1,31 @@
-header {
+#body {
+    color: #FFF;
+    font-family: 'Poppins';
+}
+
+#body h1,
+#body h2,
+#body h3,
+#frase-presentación {
+    font-family: 'Goldman';
+}
+
+#cabecera,
+#sección-sobre-nosotros,
+#body footer {
     background-color: #344CB7;
+}
+
+#hero-section {
+    padding: 20px;
+    height: 400px;
+    background: url("../assets/imágenes/hero section.png") center / cover;
+}
+
+#body main {
+    background-color: #111827;
+}
+
+#body .oculto {
+    display: none;
 }
