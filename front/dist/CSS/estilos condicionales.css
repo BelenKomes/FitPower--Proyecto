@@ -1,0 +1,15 @@
+@media (min-width: 767px) {
+    #sección-sobre-nosotros {
+        height: 600px;
+    }
+}
+
+@media (min-width: 991px) {
+    #sección-sobre-nosotros {
+        height: 700px;
+    }
+    
+    #contenedor-texto-ssn {
+        font-size: 1.2em;
+    }
+}

@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - FitPower</title>
-    <link rel="stylesheet" href="dist/CSS/estilo.css">
     <link rel="stylesheet" href="dist/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/CSS/estilo.css">
+    <link rel="stylesheet" href="dist/CSS/estilos condicionales.css">
     <link rel="stylesheet" href="dist/CSS/fuentes de letra.css">
-    <script src="dist/JS/botones.js" defer></script>
 </head>
 
-<body id="body">
-    <header id="cabecera" class="navbar navbar-expand-lg p-4">
+<body id="body" class="morado">
+    <header id="cabecera" class="morado navbar navbar-expand-lg p-4">
         <div id="contenedor-nav" class="container-fluid">
             <div id="contenedor-nombre-fitpower" class="flex-grow-1">
                 <h1 class="flex-grow-1 text-center text-lg-start">FitPower</h1>
@@ -20,16 +20,16 @@
             <nav class="collapse navbar-collapse flex-grow-0">
                 <ul class="navbar-nav">
                     <li id="link-inicio" class="nav-item">
-                        <a class="navbar-brand nav-link" href="#">Inicio</a>
+                        <a class="navbar-brand nav-link text-reset" href="#">Inicio</a>
                     </li>
                     <li id="link-planes" class="nav-item">
-                        <a class="navbar-brand nav-link" href="#planes">Planes</a>
+                        <a class="navbar-brand nav-link text-reset" href="#planes">Planes</a>
                     </li>
                     <li id="link-preguntas-frecuentes" class="nav-item">
-                        <a class="navbar-brand nav-link" href="#preguntas-frecuentes">Preguntas frecuentes</a>
+                        <a class="navbar-brand nav-link text-reset" href="#preguntas-frecuentes">Preguntas frecuentes</a>
                     </li>
                     <li id="link-contacto" class="nav-item">
-                        <a class="navbar-brand nav-link" href="#contacto">Contactanos</a>
+                        <a class="navbar-brand nav-link text-reset" href="#contacto">Contactanos</a>
                     </li>
                 </ul>
             </nav>
@@ -37,9 +37,9 @@
     </header>
 
     <main>
-        <section id="hero-section">
+        <section id="hero-section" class="d-flex align-items-center justify-content-center text-center">
             <div id="contenedor-textos-hero-section">
-                <p id="frase-presentación">
+                <p class="goldman fs-1">
                     Alcanzá tu mejor versión con nosotros
                 </p>
                 <p>
@@ -51,189 +51,205 @@
         </section>
 
         <section id="sección-planes">
-            <div id="cabecera-sp">
-                <h2 id="planes">Planes</h2>
-                <p>Tenemos diversas actividades</p>
-                <p>¡Elegí lo que más se adapte a vos!</p>
+            <div id="cabecera-sp" class="text-center p-3 p-md-5">
+                <h2 id="planes" class="fs-1">Planes</h2>
+                <p class="fs-5 m-0">Tenemos diversas actividades</p>
+                <p class="fs-5 m-0">¡Elegí lo que más se adapte a vos!</p>
             </div>
-            <div id="contenedor-planes">
-                <div id="plan-musculación" class="plan">
-                    <h3 class="nombre-plan">Musculación y Calistenia</h3>
-                    <a href="#planes">Inscribirme</a>
-                </div>
-                <div id="plan-spinning" class="plan">
-                    <h3 class="nombre-plan">Spinning</h3>
-                    <a href="#planes">Inscribirme</a>
-                </div>
-                <div id="plan-yoga" class="plan">
-                    <h3 class="nombre-plan">Yoga</h3>
-                    <a href="#planes">Inscribirme</a>
-                </div>
-                <div id="plan-pilates" class="plan">
-                    <h3 class="nombre-plan">Pilates</h3>
-                    <a href="#planes">Inscribirme</a>
+            <div id="contenedor-planes" class="container pb-5">
+                <div id="planes" class="row row-cols-lg-2 justify-content-center g-4">
+                    <div class="contenedor-plan col d-flex justify-content-center justify-content-lg-end">
+                        <div id="plan-musculación"
+                            class="plan px-2 py-4 d-flex justify-content-between align-items-center">
+                            <h3 class="nombre-plan">Musculación y Calistenia</h3>
+                            <a href="#planes"
+                                class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0">Inscribirme</a>
+                        </div>
+                    </div>
+                    <div class="contenedor-plan col d-flex justify-content-center justify-content-lg-start">
+                        <div id="plan-spinning"
+                            class="plan px-2 py-4 d-flex justify-content-between align-items-center">
+                            <h3 class="nombre-plan">Spinning</h3>
+                            <a href="#planes"
+                                class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0">Inscribirme</a>
+                        </div>
+                    </div>
+                    <div class="contenedor-plan col d-flex justify-content-center justify-content-lg-end">
+                        <div id="plan-yoga" class="plan px-2 py-4 d-flex justify-content-between align-items-center">
+                            <h3 class="nombre-plan">Yoga</h3>
+                            <a href="#planes"
+                                class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0">Inscribirme</a>
+                        </div>
+                    </div>
+                    <div class="contenedor-plan col d-flex justify-content-center justify-content-lg-start">
+                        <div id="plan-pilates" class="plan px-2 py-4 d-flex justify-content-between align-items-center">
+                            <h3 class="nombre-plan">Pilates</h3>
+                            <a href="#planes"
+                                class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0">Inscribirme</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="sección-sobre-nosotros">
-            <div id="cabecera-ssn">
-                <h2 id="sobre-nosotros">Sobre nosotros</h2>
+        <section id="sección-sobre-nosotros" class="morado d-flex pb-lg-5">
+            <div id="cabecera-ssn" class="p-4 p-lg-5 pb-md-0 pb-lg-5 text-center">
+                <h2 id="sobre-nosotros" class="fs-1">Sobre nosotros</h2>
             </div>
 
-            <div id="contenido-ssn">
-                <div id="contenedor-imagen-ssn">
-                    <img src="dist/assets/imágenes/img section figma.png">
-                </div>
-                <div id="contenedor-texto-ssn">
-                    <p>
-                        FitPower nace con el propósito de acompañarte
-                        a sentirte mejor física y mentalmente.
-                    </p>
-                    <p>
-                        Creemos en un espacio de entrenamiento social
-                        y profesional, donde cada socio se siente como
-                        en casa.
-                    </p>
-                    <p>
-                        Nuestro equipo está comprometido en ofrecer
-                        métodos de entrenamiento saludables e integrales.
-                    </p>
+            <div id="contenido-ssn" class="container flex-grow-1 pb-lg-5">
+                <div id="contenedor-sobre-nosotros" class="row d-flex align-items-start h-100">
+                    <div id="contenedor-imagen-ssn"
+                        class="col-4 col-md-5 h-100 d-flex align-items-center justify-content-center">
+                        <img src="dist/assets/imágenes/img section figma.png" class="h-100 mw-100">
+                    </div>
+                    <div id="contenedor-texto-ssn" class="col-8 col-md-7 h-100 d-flex justify-content-center">
+                        <p>
+                            FitPower nace con el propósito de acompañarte
+                            a sentirte mejor física y mentalmente.
+                        </p>
+                        <p>
+                            Creemos en un espacio de entrenamiento social
+                            y profesional, donde cada socio se siente como
+                            en casa.
+                        </p>
+                        <p>
+                            Nuestro equipo está comprometido en ofrecer
+                            métodos de entrenamiento saludables e integrales.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="sección-preguntas-frecuentes">
-            <div id="cabecera-spf">
-                <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+            <div id="cabecera-spf" class="p-5 text-center">
+                <h2 id="preguntas-frecuentes" class="fs-1">Preguntas frecuentes</h2>
             </div>
-            <div id="contenedor-sector-preguntas">
-                <div id="preguntas">
-                    <div class="pregunta">
-                        <div class="nombre-pregunta">
-                            <h3>¿Qué me ofrecen?</h3>
-                            <button id="btn-1" class="botón-más-información" data-desc="1"></button>
-                        </div>
-                        <div class="descripción-pregunta">
-                            <p id="desc-1" class="oculto">
+            <div id="contenedor-sector-preguntas" class="d-flex justify-content-center">
+                <div id="preguntas" class="list-group container-md mx-md-5 p-4 pe-5">
+                    <div class="pregunta list-group-item p-3 pt-4">
+                        <details>
+                            <summary class="d-flex justify-content-between align-items-end">
+                                <h3 class="d-inline">¿Qué me ofrecen?</h3>
+                            </summary>
+                            <p>
                                 FitPower ofrece a sus socios un área para la realización de ejercicios de musculación y
                                 calistenia. También una sala donde se realiza pilates y yoga, intercambiando los planes
-                                durante los días de la semana, y una sala enfocada a spinning,
+                                durante los días de la semana, y una sala enfocada a spinning.
                             </p>
-                        </div>
+                        </details>
                     </div>
-                    <div class="pregunta">
-                        <div class="nombre-pregunta">
-                            <h3>¿Cómo hago mi inscripción?</h3>
-                            <button id="btn-2" class="botón-más-información" data-desc="2"></button>
-                        </div>
-                        <div class="descripción-pregunta">
-                            <p id="desc-2" class="oculto">
+                    <div class="pregunta list-group-item p-3 pt-4">
+                        <details>
+                            <summary class="d-flex justify-content-between align-items-end">
+                                <h3 class="d-inline">¿Dónde están ubicados?</h3>
+                            </summary>
+                            <p>
+                                Estamos ubicados en X, Y, Z.
+                            </p>
+                        </details>
+                    </div>
+                    <div class="pregunta list-group-item p-3" pt-4>
+                        <details>
+                            <summary class="d-flex justify-content-between align-items-end">
+                                <h3 class="d-inline">¿Cómo hago mi inscripción?</h3>
+                            </summary>
+                            <p>
                                 Es muy sencillo, tenés que elegir el plan deseado y matricularte en nuestra página web o
                                 en recepción de la sede con tu cédula de identidad y la forma de pago elegida.
                             </p>
-                        </div>
+                        </details>
                     </div>
-                    <div class="pregunta">
-                        <div class="nombre-pregunta">
-                            <h3>¿Cuándo puedo empezar a entrenar?</h3>
-                            <button id="btn-3" class="botón-más-información" data-desc="3"></button>
-                        </div>
-                        <div class="descripción-pregunta">
-                            <p id="desc-3" class="oculto">
+                    <div class="pregunta list-group-item p-3 pt-4">
+                        <details>
+                            <summary class="d-flex justify-content-between align-items-end">
+                                <h3 class="d-inline">¿Cuándo puedo empezar a entrenar?</h3>
+                            </summary>
+                            <p>
                                 Después de contratar tu plan. Si realizaste tu inscripción a través de la página web,
                                 debes ir directamente a la sede con tu cédula de identidad y la tarjeta que usaste como
                                 forma de pago. En caso que la tarjeta no esté a tu nombre es necesario que el dueño de
                                 la tarjeta asista contigo a la recepción de la sede para que firme tu contrato.
                             </p>
-                        </div>
+                        </details>
                     </div>
-                    <div class="pregunta">
-                        <div class="nombre-pregunta">
-                            <h3>¿FitPower tiene atención telefónica?</h3>
-                            <button id="btn-4" class="botón-más-información" data-desc="4"></button>
-                        </div>
-                        <div class="descripción-pregunta">
-                            <p id="desc-4" class="oculto">
+                    <div class="pregunta list-group-item p-3 pt-4">
+                        <details>
+                            <summary class="d-flex justify-content-between align-items-end">
+                                <h3 class="d-inline">¿FitPower tiene atención telefónica?</h3>
+                            </summary>
+                            <p>
                                 FitPower no trabaja con atención telefónica. Todas las dudas pueden ser solucionadas a
                                 través de la página web "Hable con Nosotros" y Redes Sociales.
                             </p>
-                        </div>
-                    </div>
-                    <div class="pregunta">
-                        <div class="nombre-pregunta">
-                            <h3>¿Dónde están ubicados?</h3>
-                            <button id="btn-5" class="botón-más-información" data-desc="5"></button>
-                        </div>
-                        <div class="descripción-pregunta">
-                            <p id="desc-5" class="oculto">
-                                Estamos ubicados en X, Y, Z.
-                            </p>
-                        </div>
+                        </details>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="sección-contacto">
-            <div id="cabecera-sc">
-                <h2 id="contacto">Contactanos</h2>
-                <p>
-                    ¡Hola! Contanos tu duda o inquietud que tengas. Te
-                    daremos una respuesta en menos de 24 horas habiles!
+            <div id="cabecera-sc" class="p-5 text-center">
+                <h2 id="contacto" class="fs-1">Contactanos</h2>
+                <p class="fs-4">
+                    ¡Hola! Contanos tu duda o inquietud que tengas. ¡Te
+                    daremos una respuesta en menos de 24 horas hábiles!
                 </p>
             </div>
-            <div id="contenedor-formulario">
-                <form>
+            <div id="contenedor-formulario" class="d-flex align-items-center justify-content-center">
+                <form class="container">
                     <div id="contenedor-inputs-formulario">
                         <div class="contenedor-input">
-                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Nombre" class="d-block w-100 p-3 mb-4">
                         </div>
                         <div class="contenedor-input">
-                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Email" class="d-block w-100 p-3" my-4>
                         </div>
                         <div class="contenedor-input">
-                            <textarea>Escribir mensaje</textarea>
+                            <textarea class="d-block w-100 p-3 my-4">Escribir mensaje</textarea>
                         </div>
                     </div>
-                    <div id="contenedor-botón-formulario">
-                        <button type="submit">Enviar</button>
+                    <div id="contenedor-botón-formulario" class="d-flex justify-content-end pb-5">
+                        <button type="submit" class="morado btn btn-primary px-5 py-3 border-0 fs-5">Enviar</button>
                     </div>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div id="contenedor-logo-fitpower">
+    <footer id="footer" class="morado px-4 py-2 d-flex">
+        <div id="contenedor-logo-fitpower" class="p-3">
             <img src="dist/assets/iconos/FitPower logo.svg">
         </div>
-        <div id="contenedor-info-footer">
-            <div id="contenedor-dirección">
-                <p>Dirección: bla bla bla, Atlántida, Canelones</p>
-                <div id="contenedor-mapa">
-                    <p>Google Maps</p>
+        <div id="contenedor-info-footer" class="flex-grow-1">
+            <div id="info-footer" class="row">
+                <div id="contenedor-dirección" class="col-md-7 p-4">
+                    <p class="fs-md-2">Dirección: bla bla bla, Atlántida, Canelones</p>
+                    <div id="contenedor-mapa" class="d-flex align-items-center justify-content-center">
+                        <p>Google Maps</p>
+                    </div>
+                </div>
+                <div id="contenedor-redes-sociales" class="col-md-5 p-4">
+                    <p class="goldman h2 text-center">¡Seguinos!</p>
+                    <address class="fs-5">
+                        <div id="contacto-instagram" class="contacto m-2">
+                            <img src="dist/assets/iconos/logo-instagram.svg" alt="Instagram de FitPower" class="me-1">
+                            Fit_power
+                        </div>
+                        <div id="contacto-facebook" class="contacto m-2">
+                            <img src="dist/assets/iconos/logo-facebook.svg" alt="Facebook de FitPower" class="me-1">
+                            FitPowerUY
+                        </div>
+                        <div id="contacto-teléfono" class="contacto m-2">
+                            <img src="dist/assets/iconos/logo-teléfono.svg" alt="Teléfono de FitPower" class="me-1">
+                            098 765 432
+                        </div>
+                    </address>
                 </div>
             </div>
-            <div id="contenedor-redes-sociales">
-                <p>¡Síguenos!</p>
-                <address>
-                    <div id="contacto-instagram">
-                        <img src="dist/assets/iconos/logo-instagram.svg" alt="Instagram de FitPower">
-                        Fit_power
-                    </div>
-                    <div id="contacto-facebook">
-                        <img src="dist/assets/iconos/logo-facebook.svg" alt="Facebook de FitPower">
-                        FitPowerUY
-                    </div>
-                    <div id="contacto-teléfono">
-                        <img src="dist/assets/iconos/logo-teléfono.svg" alt="Teléfono de FitPower">
-                        098 765 432
-                    </div>
-                </address>
-            </div>
         </div>
-        <div id="copyright-fitpower">
+        <div id="copyright-fitpower" class="text-center">
             <p>© FitPower - Todos los derechos reservados.</p>
         </div>
     </footer>

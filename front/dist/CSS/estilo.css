@@ -1,4 +1,4 @@
-html {
+.morado {
     background-color: #344CB7;
 }
 
@@ -14,19 +14,10 @@ html {
 #body h1,
 #body h2,
 #body h3,
-#frase-presentación,
-#cabecera li {
+#cabecera li,
+.botón-inscribirme,
+.goldman {
     font-family: 'Goldman';
-}
-
-#cabecera,
-#sección-sobre-nosotros,
-#body footer {
-    background-color: #344CB7;
-}
-
-#cabecera a {
-    color: #FFF;
 }
 
 #body main {
@@ -35,7 +26,99 @@ html {
 
 #hero-section {
     padding: 20px;
-    height: 400px;
+    height: 600px;
     background: url("../assets/imágenes/hero section.png") center / cover;
 }
 
+.plan {
+    width: 400px;
+    height: 400px;
+    flex-flow: column;
+}
+
+#plan-musculación {
+    background: url("../assets/imágenes/muscle img.png") center / cover;
+}
+
+#plan-spinning {
+    background: url("../assets/imágenes/hardio cycling.png") center / cover;
+}
+
+#plan-yoga {
+    background: url("../assets/imágenes/yoga.png") center / cover;
+}
+
+#plan-pilates {
+    background: url("../assets/imágenes/pilates img section.png") center / cover;
+}
+
+#sección-sobre-nosotros {
+    height: 400px;
+    flex-flow: column;
+}
+
+#contenedor-sobre-nosotros {
+    height: 450px;
+}
+
+#contenedor-texto-ssn {
+    flex-flow: column;
+}
+
+#contenedor-imagen-ssn img {
+    object-fit: contain;
+}
+
+#preguntas {
+    padding-bottom: 80px
+}
+
+#preguntas,
+.pregunta {
+    border: none;
+    border-bottom: 1px solid #111827;
+    color: #FFF;
+    background-color: #344CB7;
+}
+
+#preguntas summary {
+    list-style: none;
+
+    &::after {
+        content: "+";
+        padding: 0 5px;
+        color: #111827;
+        font-size: 6em;
+        line-height: 0.6em;
+    }
+
+    [open] &::after {
+        content: "-";
+    }
+}
+
+#contenedor-inputs-formulario input,
+#contenedor-inputs-formulario textarea {
+    border-radius: 15px;
+}
+
+#contenedor-inputs-formulario textarea {
+    height: 200px;
+    color: #808080;
+}
+
+#footer {
+    flex-flow: column;
+    height: 445px;
+}
+
+#contenedor-mapa {
+    height: 200px;
+    width: 300px;
+    background-color: #FFF;
+    color: #000;
+}
+
+.contacto img {
+    width: 2em;
+}
