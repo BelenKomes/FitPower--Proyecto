@@ -2,25 +2,21 @@
     background-color: #344CB7;
 }
 
-#body {
+body {
     color: #FFF;
     font-family: 'Poppins';
 }
 
-#body .oculto {
-    display: none;
-}
-
-#body h1,
-#body h2,
-#body h3,
-#cabecera li,
+h1,
+h2,
+h3,
+li,
 .botón-inscribirme,
 .goldman {
     font-family: 'Goldman';
 }
 
-#body main {
+main {
     background-color: #111827;
 }
 
@@ -109,7 +105,7 @@
 
 #footer {
     flex-flow: column;
-    height: 445px;
+    height: 450px;
 }
 
 #contenedor-mapa {
@@ -121,4 +117,24 @@
 
 .contacto img {
     width: 2em;
+}
+
+/* Documento login */
+
+#imagen-login {
+    object-fit: cover;
+}
+
+#contenedor-principal {
+    flex-flow: column;
+}
+
+#contenedor-logo-fitpower-login {
+    font-size: 5em;
+}
+
+.botón-login {
+    background-color: #FFF;
+    color: #000;
+    border-radius: 40px;
 }
