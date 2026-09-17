@@ -16,13 +16,21 @@ li,
     font-family: 'Goldman';
 }
 
+#dropdown-perfil {
+    background-color: #344CB7;
+}
+
+#dropdown-perfil a {
+    color: #FFF;
+}
+
 main {
     background-color: #111827;
 }
 
 #hero-section {
     height: 600px;
-    background: url("../assets/imágenes/hero section.png") center / cover;
+    background: url("../assets/imagenes/hero-section.png") center / cover;
 }
 
 .plan {
@@ -32,19 +40,19 @@ main {
 }
 
 #plan-musculación {
-    background: url("../assets/imágenes/muscle img.png") center / cover;
+    background: url("../assets/imagenes/muscle-img.png") center / cover;
 }
 
 #plan-spinning {
-    background: url("../assets/imágenes/hardio cycling.png") center / cover;
+    background: url("../assets/imagenes/hardio-cycling.png") center / cover;
 }
 
 #plan-yoga {
-    background: url("../assets/imágenes/yoga.png") center / cover;
+    background: url("../assets/imagenes/yoga.png") center / cover;
 }
 
 #plan-pilates {
-    background: url("../assets/imágenes/pilates img section.png") center / cover;
+    background: url("../assets/imagenes/pilates-img-section.png") center / cover;
 }
 
 #sección-sobre-nosotros {
@@ -105,6 +113,11 @@ main {
 #footer {
     flex-flow: column;
     height: 450px;
+}
+
+#mapa {
+    border: none;
+    max-width: 100%;
 }
 
 .contacto img {

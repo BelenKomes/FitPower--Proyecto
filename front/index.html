@@ -4,36 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dist/assets/iconos/favicon.png" type="image/png">
     <title>Inicio - FitPower</title>
     <link rel="stylesheet" href="dist/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="dist/CSS/estilo.css">
     <link rel="stylesheet" href="dist/CSS/estilos condicionales.css">
     <link rel="stylesheet" href="dist/CSS/fuentes de letra.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </head>
 
 <body class="morado">
     <header id="cabecera" class="morado navbar navbar-expand-lg p-4">
         <div id="contenedor-nav" class="container-fluid">
             <div id="contenedor-nombre-fitpower" class="flex-grow-1">
-                <h1 class="flex-grow-1 text-center text-lg-start">FitPower</h1>
+                <h1 class="flex-grow-1 text-lg-start">FitPower</h1>
             </div>
-            <nav class="collapse navbar-collapse flex-grow-0">
-                <ul class="navbar-nav">
-                    <li id="link-inicio" class="nav-item">
-                        <a class="navbar-brand nav-link text-reset" href="#">Inicio</a>
-                    </li>
-                    <li id="link-planes" class="nav-item">
-                        <a class="navbar-brand nav-link text-reset" href="#planes">Planes</a>
-                    </li>
-                    <li id="link-preguntas-frecuentes" class="nav-item">
-                        <a class="navbar-brand nav-link text-reset" href="#preguntas-frecuentes">Preguntas
-                            frecuentes</a>
-                    </li>
-                    <li id="link-contacto" class="nav-item">
-                        <a class="navbar-brand nav-link text-reset" href="#contacto">Contactanos</a>
-                    </li>
-                </ul>
-            </nav>
+            <div id="contenedor-links-cabecera">
+                <nav class="collapse navbar-collapse flex-grow-0">
+                    <ul class="navbar-nav">
+                        <li id="link-inicio" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#" aria-current="page">Inicio</a>
+                        </li>
+                        <li id="link-planes" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#planes">Planes</a>
+                        </li>
+                        <li id="link-preguntas-frecuentes" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#preguntas-frecuentes">Preguntas
+                                frecuentes</a>
+                        </li>
+                        <li id="link-contacto" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#contacto">Contactanos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="contenedor-perfil" class="px-lg-4">
+                <div class="dropdown">
+                    <button id="activador-dropdown-perfil" class="btn" type="button" data-bs-toggle="dropdown">
+                        <img src="dist/assets/iconos/foto-perfil.svg">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" id="dropdown-perfil">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="dist/paginas/login.html">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -101,10 +119,10 @@
             <div id="contenido-ssn" class="container flex-grow-1 pb-lg-5">
                 <div id="contenedor-sobre-nosotros" class="row d-flex align-items-start h-100">
                     <div id="contenedor-imagen-ssn"
-                        class="col-4 col-md-5 h-100 d-flex align-items-center justify-content-center">
-                        <img src="dist/assets/imágenes/img section figma.png" class="h-100 mw-100">
+                        class="col-4 col-md-5 h-100 d-none d-sm-flex align-items-center justify-content-center">
+                        <img src="dist/assets/imagenes/img-section-figma.png" class="h-100 mw-100">
                     </div>
-                    <div id="contenedor-texto-ssn" class="col-8 col-md-7 h-100 d-flex justify-content-center">
+                    <div id="contenedor-texto-ssn" class="col-12 col-sm-8 col-md-7 h-100 d-flex justify-content-center">
                         <p>
                             FitPower nace con el propósito de acompañarte
                             a sentirte mejor física y mentalmente.
@@ -219,15 +237,18 @@
         </section>
     </main>
 
-    <footer id="footer" class="morado px-4 py-2 d-flex">
+    <footer id="footer" class="morado px-4 px-md-5 py-2 d-flex">
         <div id="contenedor-logo-fitpower" class="p-3">
-            <img src="dist/assets/iconos/FitPower logo.svg">
+            <img src="dist/assets/iconos/fitpower-logo.svg">
         </div>
         <div id="contenedor-info-footer" class="flex-grow-1">
             <div id="info-footer" class="row">
                 <div id="contenedor-dirección" class="col-md-7 p-4">
-                    <p class="fs-md-2">Calle 30 y Del Riveiro, Atlántida, Canelones</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d881.2963121694061!2d-55.76265233671278!3d-34.76430572208409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDQ1JzUxLjMiUyA1NcKwNDUnNDQuNyJX!5e1!3m2!1sen!2suy!4v1785024725535!5m2!1sen!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <p class="fs-md-2">Dirección: Calle 30 y Del Riveiro, Atlántida, Canelones</p>
+                    <iframe id="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d881.2963121694061!2d-55.76265233671278!3d-34.76430572208409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDQ1JzUxLjMiUyA1NcKwNDUnNDQuNyJX!5e1!3m2!1sen!2suy!4v1785024725535!5m2!1sen!2suy"
+                        width="400" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
                 <div id="contenedor-redes-sociales" class="col-md-5 p-4">
                     <p class="goldman h2 text-center">¡Seguinos!</p>
@@ -241,7 +262,7 @@
                             FitPowerUY
                         </div>
                         <div id="contacto-teléfono" class="contacto m-2">
-                            <img src="dist/assets/iconos/logo-teléfono.svg" alt="Teléfono de FitPower" class="me-1">
+                            <img src="dist/assets/iconos/logo-telefono.svg" alt="Teléfono de FitPower" class="me-1">
                             098 765 432
                         </div>
                     </address>
