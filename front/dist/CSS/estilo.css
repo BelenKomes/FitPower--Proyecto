@@ -24,6 +24,10 @@ li,
     color: #FFF;
 }
 
+#dropdown-perfil a:hover {
+    background-color: #5D75DE
+}
+
 main {
     background-color: #111827;
 }
@@ -91,7 +95,7 @@ main {
         content: "+";
         padding: 0 5px;
         color: #111827;
-        font-size: 6em;
+        font-size: 5em;
         line-height: 0.6em;
     }
 

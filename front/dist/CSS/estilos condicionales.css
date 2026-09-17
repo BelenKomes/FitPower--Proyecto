@@ -2,13 +2,17 @@
     #sección-sobre-nosotros {
         height: 600px;
     }
+
+    #preguntas summary::after {
+        font-size: 6em;
+    }
 }
 
 @media (min-width: 991px) {
     #sección-sobre-nosotros {
         height: 700px;
     }
-    
+
     #contenedor-texto-ssn {
         font-size: 1.2em;
     }
