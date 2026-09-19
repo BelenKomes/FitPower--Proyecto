@@ -26,19 +26,19 @@
                 <nav class="collapse navbar-collapse flex-grow-0">
                     <ul class="navbar-nav">
                         <li id="link-inicio" class="nav-item">
-                            <a class="navbar-brand nav-link text-reset" href="#" aria-current="page">Mi progreso</a>
+                            <a class="navbar-brand nav-link text-reset" href="#" >Mi progreso</a>
                         </li>
                         <li id="link-planes" class="nav-item">
-                            <a class="navbar-brand nav-link text-reset" href="#planes">Dashboard</a>
+                            <a class="navbar-brand nav-link text-reset" href="#">Dashboard</a>
                         </li>
                         <li id="link-preguntas-frecuentes" class="nav-item">
-                            <a class="navbar-brand nav-link text-reset" href="#preguntas-frecuentes">Rutinas</a>
+                            <a class="navbar-brand nav-link text-reset" href="#">Rutinas</a>
                         </li>
                         <li id="link-contacto" class="nav-item">
-                            <a class="navbar-brand nav-link text-reset" href="#contacto">Ejercicios</a>
+                            <a class="navbar-brand nav-link text-reset" href="#">Ejercicios</a>
                         </li>
                         <li id="link-contacto" class="nav-item">
-                            <a class="navbar-brand nav-link text-reset" href="#contacto">Logros</a>
+                            <a class="navbar-brand nav-link text-reset" href="#" aria-current="page">Logros</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,74 +66,108 @@
                 recuperarás tu salud. No te rindas.
             </p>
         </div>
-        <div id="contenedor-logros">
+        <div id="sección-logros">
             <div id="contenedor-logros-longevidad">
                 <h2>Longevidad</h2>
                 <ul id="logros" class="row gx-5">
                     <li class="contenedor-logro col col-auto">
-                        <div class="logro d-inline">
-                            <div class="contenedor-imagen-logro p-2">
-                                <img src="../assets/iconos/logros/logro-bronce.svg" width="120" height="120">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-logro">
+                            <div class="logro d-inline">
+                                <div class="contenedor-imagen-logro p-2">
+                                    <img src="../assets/iconos/logros/logro-bronce.svg" width="120" height="120">
+                                </div>
+                                <div class="contenedor-nombre-logro p-2 text-center">
+                                    Principiante
+                                </div>
                             </div>
-                            <div class="contenedor-nombre-logro p-2 text-center">
-                                Principiante
-                            </div>
-                        </div>
+                        </button>
                     </li>
+
                     <li class="contenedor-logro col col-auto">
-                        <div class="logro d-inline">
-                            <div class="contenedor-imagen-logro p-2">
-                                <img src="../assets/iconos/logros/logro-plata.svg" width="120" height="120">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-logro">
+                            <div class="logro d-inline">
+                                <div class="contenedor-imagen-logro p-2">
+                                    <img src="../assets/iconos/logros/logro-plata.svg" width="120" height="120">
+                                </div>
+                                <div class="contenedor-nombre-logro p-2 text-center">
+                                    Aficionado
+                                </div>
                             </div>
-                            <div class="contenedor-nombre-logro p-2 text-center">
-                                Aficionado
-                            </div>
-                        </div>
+                        </button>
                     </li>
+
                     <li class="contenedor-logro col col-auto">
-                        <div class="logro d-inline">
-                            <div class="contenedor-imagen-logro p-2">
-                                <img src="../assets/iconos/logros/logro-bloqueado.svg" width="120" height="120">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-logro">
+                            <div class="logro d-inline">
+                                <div class="contenedor-imagen-logro p-2">
+                                    <img src="../assets/iconos/logros/logro-bloqueado.svg" width="120" height="120">
+                                </div>
+                                <div class="contenedor-nombre-logro p-2 text-center">
+                                    Pro
+                                </div>
                             </div>
-                            <div class="contenedor-nombre-logro p-2 text-center">
-                                Pro
-                            </div>
-                        </div>
+                        </button>
                     </li>
+
                     <li class="contenedor-logro col col-auto">
-                        <div class="logro d-inline">
-                            <div class="contenedor-imagen-logro p-2">
-                                <img src="../assets/iconos/logros/logro-bloqueado.svg" width="120" height="120">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-logro">
+                            <div class="logro d-inline">
+                                <div class="contenedor-imagen-logro p-2">
+                                    <img src="../assets/iconos/logros/logro-bloqueado.svg" width="120" height="120">
+                                </div>
+                                <div class="contenedor-nombre-logro p-2 text-center">
+                                    Veterano
+                                </div>
                             </div>
-                            <div class="contenedor-nombre-logro p-2 text-center">
-                                Veterano
+                        </button>
+                    </li>
+
+                    <div class="modal fade" id="modal-logro" tabindex="-1" aria-labelledby="título-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content modal-logro-contenido">
+                                <div class="modal-header">
+                                    <button id="botón-cerrar-modal" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body p-1 text-center">
+                                    <h3 class="modal-title h1 mb-4" id="título-modal">Principiante</h3>
+                                    Tu primer mes en FitPower.
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <p class="d-block">Desbloqueado el 1/12/2026</p>
+                                </div>
                             </div>
                         </div>
-                    </li>
+                    </div>
                 </ul>
             </div>
             <div id="contenedor-logros-eventos">
                 <h2>Eventos</h2>
                 <ul id="logros" class="row gx-5">
                     <li class="contenedor-logro col col-auto">
-                        <div class="logro d-inline">
-                            <div class="contenedor-imagen-logro p-2">
-                                <img src="../assets/iconos/logros/logro-oro.svg" width="120" height="120">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-logro">
+                            <div class="logro d-inline">
+                                <div class="contenedor-imagen-logro p-2">
+                                    <img src="../assets/iconos/logros/logro-oro.svg" width="120" height="120">
+                                </div>
+                                <div class="contenedor-nombre-logro p-2 text-center">
+                                    Competidor
+                                </div>
                             </div>
-                            <div class="contenedor-nombre-logro p-2 text-center">
-                                Competidor
-                            </div>
-                        </div>
+                        </button>
                     </li>
                     <li class="contenedor-logro col col-auto">
-                        <div class="logro d-inline">
-                            <div class="contenedor-imagen-logro p-2">
-                                <img src="../assets/iconos/logros/logro-platino.svg" width="120" height="120">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-logro">
+                            <div class="logro d-inline">
+                                <div class="contenedor-imagen-logro p-2">
+                                    <img src="../assets/iconos/logros/logro-platino.svg" width="120" height="120">
+                                </div>
+                                <div class="contenedor-nombre-logro p-2 text-center">
+                                    Campeón
+                                </div>
                             </div>
-                            <div class="contenedor-nombre-logro p-2 text-center">
-                                Campeón
-                            </div>
-                        </div>
+                        </button>
                     </li>
                 </ul>
             </div>

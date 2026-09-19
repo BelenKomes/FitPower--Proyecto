@@ -4,7 +4,7 @@
 
 body {
     color: #FFF;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 h1,
@@ -13,7 +13,7 @@ h3,
 li,
 .botón-inscribirme,
 .goldman {
-    font-family: 'Goldman';
+    font-family: 'Goldman', Arial, sans-serif;
 }
 
 #contenedor-nombre-fitpower a {
@@ -154,4 +154,29 @@ main {
 /* Documento logros */
 #logros li {
     list-style-type: none;
+}
+
+.logro {
+    color: #FFF;
+}
+
+.modal-logro-contenido {
+    color: #FFF;
+    font-family: "Goldman", Arial, sans-serif;
+    background-color: #344CB7;
+}
+
+.modal-logro-contenido > div {
+    border: none;
+}
+
+#botón-cerrar-modal {
+    color: #FFF;
+    font-size: 2em;
+    opacity: 1;
+    background: none;
+}
+
+.modal-body {
+    height: 15em;
 }
