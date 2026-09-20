@@ -29,8 +29,8 @@
                         <li id="link-inicio" class="nav-item">
                             <a class="navbar-brand nav-link text-reset" href="#" aria-current="page">Inicio</a>
                         </li>
-                        <li id="link-planes" class="nav-item">
-                            <a class="navbar-brand nav-link text-reset" href="#planes">Planes</a>
+                        <li id="link-plan" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#plan">Plan</a>
                         </li>
                         <li id="link-preguntas-frecuentes" class="nav-item">
                             <a class="navbar-brand nav-link text-reset" href="#preguntas-frecuentes">Preguntas
@@ -45,11 +45,13 @@
             <div id="contenedor-perfil" class="px-lg-4">
                 <div class="dropdown">
                     <button id="activador-dropdown-perfil" class="btn" type="button" data-bs-toggle="dropdown">
-                        <img src="dist/assets/iconos/foto-perfil.svg">
+                        <img src="dist/assets/iconos/icono-usuario.svg">
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" id="dropdown-perfil">
                         <li><a class="dropdown-item" href="dist/paginas/logros.html">Perfil</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="dist/paginas/login.html">Cerrar sesión</a></li>
                     </ul>
                 </div>
@@ -71,42 +73,40 @@
             </div>
         </section>
 
-        <section id="sección-planes">
+        <section id="sección-plan">
             <div id="cabecera-sp" class="text-center p-3 p-md-5">
-                <h2 id="planes" class="fs-1">Planes</h2>
-                <p class="fs-5 m-0">Tenemos diversas actividades</p>
-                <p class="fs-5 m-0">¡Elegí lo que más se adapte a vos!</p>
+                <h2 id="plan" class="fs-1">Plan</h2>
+                <p class="fs-5 m-0">¡Cumplí tus objetivos en FitPower!</p>
             </div>
-            <div id="contenedor-planes" class="container pb-5">
-                <div id="planes" class="row row-cols-lg-2 justify-content-center g-4">
-                    <div class="contenedor-plan col d-flex justify-content-center justify-content-lg-end">
-                        <div id="plan-musculación"
-                            class="plan px-2 py-4 d-flex justify-content-between align-items-center">
-                            <h3 class="nombre-plan">Musculación y Calistenia</h3>
-                            <a href="#planes"
-                                class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0">Inscribirme</a>
-                        </div>
+            <div id="contenedor-plan" class="container pb-5">
+                <div class="row justify-content-center">
+                    <div id="plan-musculación" class="plan px-2 py-4 d-flex justify-content-between align-items-center">
+                        <h3 class="nombre-plan ">Musculación y Calistenia</h3>
+                        <button class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0"
+                            data-bs-toggle="modal" data-bs-target="#modal-inscripción">Inscribirme</button>
                     </div>
-                    <div class="contenedor-plan col d-flex justify-content-center justify-content-lg-start">
-                        <div id="plan-spinning"
-                            class="plan px-2 py-4 d-flex justify-content-between align-items-center">
-                            <h3 class="nombre-plan">Spinning</h3>
-                            <a href="#planes"
-                                class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0">Inscribirme</a>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal-inscripción" tabindex="-1" aria-labelledby="título-modal"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modal-inscripción-contenido">
+                        <div class="modal-header">
+                            <button id="botón-cerrar-modal" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">X</button>
                         </div>
-                    </div>
-                    <div class="contenedor-plan col d-flex justify-content-center justify-content-lg-end">
-                        <div id="plan-yoga" class="plan px-2 py-4 d-flex justify-content-between align-items-center">
-                            <h3 class="nombre-plan">Yoga</h3>
-                            <a href="#planes"
-                                class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0">Inscribirme</a>
+                        <div class="modal-body p-3">
+                            <h4 class="modal-title h3 text-center mb-4" id="título-modal">Musculación y Calistenia</h4>
+                            <p>
+                                Pase libre para sala de musculación y calistenia.
+                                De lunes a sábado, 07:00 a 22:00.
+                            </p>
+                            <p>Precio: $1700/mes</p>
                         </div>
-                    </div>
-                    <div class="contenedor-plan col d-flex justify-content-center justify-content-lg-start">
-                        <div id="plan-pilates" class="plan px-2 py-4 d-flex justify-content-between align-items-center">
-                            <h3 class="nombre-plan">Pilates</h3>
-                            <a href="#planes"
-                                class="botón-inscribirme morado btn btn-primary fs-5 px-4 py-2 border-0">Inscribirme</a>
+                        <div id="pie-modal-inscripción" class="modal-footer text-center">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary">Confirmar</button>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
         <section id="sección-contacto">
             <div id="cabecera-sc" class="p-5 text-center">
                 <h2 id="contacto" class="fs-1">Contactanos</h2>
-                <p class="fs-4">
+                <p>
                     ¡Hola! Contanos tu duda o inquietud que tengas. ¡Te
                     daremos una respuesta en menos de 24 horas hábiles!
                 </p>
