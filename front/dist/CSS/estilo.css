@@ -41,16 +41,18 @@ main {
     background: url("../assets/imagenes/hero-section.png") center / cover;
 }
 
-.plan {
-    width: 400px;
-    height: 400px;
-    flex-flow: column;
-}
-
 #plan-musculación {
     background: url("../assets/imagenes/muscle-img.png") center / cover;
 }
 
+
+.plan {
+    width: 320px;
+    height: 320px;
+    flex-flow: column;
+}
+
+/* Reglas no utilizadas
 #plan-spinning {
     background: url("../assets/imagenes/hardio-cycling.png") center / cover;
 }
@@ -61,6 +63,11 @@ main {
 
 #plan-pilates {
     background: url("../assets/imagenes/pilates-img-section.png") center / cover;
+} */
+
+#pie-modal-inscripción button {
+    background-color: #FFF;
+    color: #000;
 }
 
 #sección-sobre-nosotros {
@@ -152,31 +159,56 @@ main {
 }
 
 /* Documento logros */
-#logros li {
-    list-style-type: none;
-}
-
 .logro {
     color: #FFF;
 }
 
-.modal-logro-contenido {
+.modal-logro-contenido,
+.modal-inscripción-contenido {
     color: #FFF;
-    font-family: "Goldman", Arial, sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
     background-color: #344CB7;
 }
 
-.modal-logro-contenido > div {
+.modal-logro-contenido > div,
+.modal-inscripción-contenido > div {
     border: none;
+}
+
+.modal-logro-contenido h3,
+.modal-inscripción-contenido h4 {
+    font-family: "Goldman", Arial, sans-serif;
 }
 
 #botón-cerrar-modal {
     color: #FFF;
     font-size: 2em;
     opacity: 1;
+    font-family: "Goldman", Arial, sans-serif;
     background: none;
 }
 
 .modal-body {
     height: 15em;
+}
+
+/* Documento rutinas */
+#elegir-disciplina,
+#confirmar-disciplina {
+    color: #FFF;
+}
+
+#elegir-disciplina:hover,
+#confirmar-disciplina:hover,
+#elegir-disciplina.show,
+#confirmar-disciplina.show {
+    background-color: #344CB7;
+}
+
+#dropdown-disciplinas li {
+    border-top: 1px solid #727272;
+}
+
+#dropdown-disciplinas li:last-child {
+    border-bottom: 1px solid #727272;
 }
