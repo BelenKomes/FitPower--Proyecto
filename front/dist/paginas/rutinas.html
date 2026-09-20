@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/iconos/favicon/favicon.png" type="image/png">
+    <title>Mis rutinas - FitPower</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/fuentes de letra.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="morado">
+    <header id="cabecera" class="morado navbar navbar-expand-lg p-4">
+        <div id="contenedor-nav" class="container-fluid">
+            <div id="contenedor-nombre-fitpower" class="flex-grow-1">
+                <a href="../../index.html" class="navbar-brand nav-link text-reset goldman d-inline">
+                    FitPower
+                </a>
+            </div>
+            <div id="contenedor-links-cabecera">
+                <nav class="collapse navbar-collapse flex-grow-0">
+                    <ul class="navbar-nav">
+                        <li id="link-inicio" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#">Mi progreso</a>
+                        </li>
+                        <li id="link-planes" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#">Dashboard</a>
+                        </li>
+                        <li id="link-preguntas-frecuentes" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#" aria-current="page">Rutinas</a>
+                        </li>
+                        <li id="link-contacto" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="#">Ejercicios</a>
+                        </li>
+                        <li id="link-contacto" class="nav-item">
+                            <a class="navbar-brand nav-link text-reset" href="logros.html">Logros</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="contenedor-perfil" class="px-lg-4">
+                <div class="dropdown">
+                    <button id="activador-dropdown-perfil" class="btn" type="button" data-bs-toggle="dropdown">
+                        <img src="../assets/iconos/icono-usuario.svg">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" id="dropdown-perfil">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <main class="p-5">
+        <h1>Mis rutinas</h1>
+        <p class="mb-5">
+            Aqui verás las rutinas predeterminadas credas por FitPower.
+            Tambien puedes seleccionar tu objetivo en la seccion “Rutinas Personalizadas”
+            y tu entrenador vinculado la creará para ti.
+        </p>
+
+        <h2 class="mb-4">Rutinas predeterminadas</h2>
+        <div class="container mb-5">
+            <ul class="row row-cols-1 row-cols-md-3 g-4 gy-md-0 list-unstyled text-center fs-4">
+                <li class="col">
+                    <div class="morado p-3 rounded-2">Musculación</div>
+                </li>
+                <li class="col">
+                    <div class="morado p-3 rounded-2">Híbrido</div>
+                </li>
+                <li class="col">
+                    <div class="morado p-3 rounded-2">Calistenia</div>
+                </li>
+            </ul>
+        </div>
+
+        <h2 class="mb-4">Rutinas personalizadas</h2>
+        <p>Sin rutinas actualmente...</p>
+        <p>Elige un objetivo que tenes en mente y tu entrenador creá una rutina.</p>
+        <div class="container">
+            <form id="crear-rutina" class="container">
+                <div class="row row-cols-auto">
+                    <div class="col">
+                        <div id="dropdown-disciplinas" class="dropdown">
+                            <button id="elegir-disciplina" class="goldman morado fs-4 py-3 px-5 rounded-2 btn dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Disciplinas
+                            </button>
+                            <ul class="dropdown-menu fs-4 py-3 px-4">
+                                <li><button class="dropdown-item" type="button">Culturismo</button></li>
+                                <li><button class="dropdown-item" type="button">Calistenia</button></li>
+                                <li><button class="dropdown-item" type="button">Strongman</button></li>
+                                <li><button class="dropdown-item" type="button">Powerlifting</button></li>
+                                <li><button class="dropdown-item" type="button">Crossfit</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button id="confirmar-disciplina" type="submit" class="goldman morado fs-4 py-3 px-5 rounded-2 btn">Confirmar</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer id="footer" class="morado px-4 px-md-5 py-2 d-flex">
+        <div id="info-footer" class="row">
+            <div id="contenedor-logo-dirección" class="col-md-7 p-4">
+                <div id="contenedor-logo-fitpower" class="p-3">
+                    <img src="../assets/iconos/fitpower-logo.svg">
+                </div>
+                <p class="fs-md-2">Dirección: Calle 30 y Del Riveiro, Atlántida, Canelones</p>
+            </div>
+            <div id="contenedor-redes-sociales" class="col-md-5 p-4">
+                <p class="goldman h2 text-center">¡Seguinos!</p>
+                <address class="fs-5">
+                    <div id="contacto-instagram" class="contacto m-2">
+                        <img src="../assets/iconos/logo-instagram.svg" alt="Instagram de FitPower" class="me-1">
+                        Fit_power
+                    </div>
+                    <div id="contacto-facebook" class="contacto m-2">
+                        <img src="../assets/iconos/logo-facebook.svg" alt="Facebook de FitPower" class="me-1">
+                        FitPowerUY
+                    </div>
+                    <div id="contacto-teléfono" class="contacto m-2">
+                        <img src="../assets/iconos/logo-telefono.svg" alt="Teléfono de FitPower" class="me-1">
+                        098 765 432
+                    </div>
+                </address>
+            </div>
+        </div>
+        <div id="copyright-fitpower" class="text-center">
+            <p>© FitPower - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
